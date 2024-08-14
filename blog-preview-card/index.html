@@ -19,6 +19,8 @@
   <style>
     body {
       background-color: #F4D04E;
+      margin: 0;
+      padding: 0;
     }
 
     .attribution {
@@ -36,18 +38,25 @@
       justify-content: center;
       align-items: center;
       height: 100vh;
+      @media screen and (max-width: 425px) {
+        padding: 0 24px;
+      }
     }
 
     .card {
       background-color: white;
       border-radius: 20px;
-      width: 384px;
+      max-width: calc(100vw - 96px);
+      @media screen and (min-width: 426px) {
+        max-width: 384px;
+      }
       box-shadow: 8px 8px rgb(0, 0, 0);
     }
 
     .card img {
       margin: 24px 24px 0 24px;
       border-radius: 10px;
+      width: calc(100% - 48px);
     }
 
     .tag {
@@ -108,6 +117,7 @@
       align-self: stretch;
       flex-grow: 0;
       margin-left: 24px;
+      margin-right: 24px;
       margin-top: 12px;
     }
 
