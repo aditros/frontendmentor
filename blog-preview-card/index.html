@@ -1,34 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Blog preview card</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    body {
+      background-color: #F4D04E;
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 20px;
+      width: 384px;
+      box-shadow: 8px 8px rgb(0, 0, 0);
+    }
+
+    .card img {
+      margin: 24px 24px 0 24px;
+      border-radius: 10px;
+    }
+
+    .tag {
+      padding: 4px 12px;
+      background-color: #F4D04E;
+      font-family: 'Figtree';
+      font-style: normal;
+      font-weight: 800;
+      font-size: 14px;
+      line-height: 150%;
+      color: #111111;
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+      margin-top: 24px;
+      margin-left: 24px;
+      width: fit-content;
+    }
+
+    .date {
+      font-family: 'Figtree';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 150%;
+      color: #111111;
+      flex: none;
+      order: 1;
+      flex-grow: 0;
+      margin-left: 24px;
+      margin-top: 12px;
+    }
+
+    h1 {
+      font-family: 'Figtree';
+      font-style: normal;
+      font-weight: 800;
+      font-size: 24px;
+      line-height: 150%;
+      color: #111111;
+      flex: none;
+      order: 2;
+      align-self: stretch;
+      flex-grow: 0;
+      margin-left: 24px;
+      margin-top: 12px;
+    }
+
+    .card p {
+      font-family: 'Figtree';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 150%;
+      color: #6B6B6B;
+      flex: none;
+      order: 3;
+      align-self: stretch;
+      flex-grow: 0;
+      margin-left: 24px;
+      margin-top: 12px;
+    }
+
+    .author {
+      margin-left: 24px;
+      margin-top: 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+
+    .author img {
+      margin: 0;
+      width: 32px;
+      height: 32px;
+    }
+
+    .author span {
+      font-family: 'Figtree';
+      font-style: normal;
+      font-weight: 800;
+      font-size: 14px;
+      line-height: 150%;
+      color: #111111;
+      flex: none;
+      order: 1;
+      flex-grow: 0;
+    }
+
+    .attribution {
+      margin-top: 4rem;
+    }
   </style>
 </head>
+
 <body>
+  <main role="main">
+    <div class="card">
+      <img src="./assets/images/illustration-article.svg" alt="Illustration of a blog post" />
+      <div class="tag">Learning</div>
 
-  Learning
+      <div class="date">Published 21 Dec 2023</div>
 
-  Published 21 Dec 2023
+      <h1>HTML & CSS foundations</h1>
 
-  HTML & CSS foundations
+      <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
 
-  These languages are the backbone of every website, defining structure, content, and presentation.
-
-  Greg Hooper
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+      <div class="author">
+        <img src="./assets/images/image-avatar.webp" alt="Author's profile picture" />
+        <span>
+          Greg Hooper
+        </span>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://aditros.com">AditRos</a>.
+    </div>
+  </main>
 </body>
+
 </html>
