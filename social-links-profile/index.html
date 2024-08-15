@@ -47,11 +47,35 @@
       border-radius: 12px;
     }
 
+    @media only screen and (max-width: 769px) {
+      .card {
+        width: 456px;
+      }
+    }
+
+    @media only screen and (max-width: 376px) {
+      .card {
+        width: 327px;
+      }
+    }
+
     .card img {
       width: 88px;
       height: 88px;
       border-radius: 50%;
       margin: 40px 148px 0 148px;
+    }
+
+    @media only screen and (max-width: 769px) {
+      .card img {
+        margin: 40px 184px 0 184px;
+      }
+    }
+
+    @media only screen and (max-width: 376px) {
+      .card img {
+        margin: 24px 119.5px 0 119.5px;
+      }
     }
 
     .card h1 {
@@ -99,6 +123,7 @@
       align-self: stretch;
       flex-grow: 0;
       margin-top: 24px;
+      margin-bottom: 24px;
     }
 
     .card ul {
@@ -116,7 +141,7 @@
     .card ul li {
       width: 100%;
     }
-    
+
     .card ul li:last-child {
       margin-bottom: 40px;
     }
@@ -140,13 +165,19 @@
       padding: 12px 0;
     }
 
+    @media only screen and (max-width: 376px) {
+      .card a {
+        margin: 0 24px;
+      }
+    }
+
     .card a:hover {
       background: #C4F82A;
       color: #333333;
     }
 
     .attribution {
-      margin-top: 4rem;
+      margin-top: 1.5rem;
     }
   </style>
 </head>
@@ -165,10 +196,6 @@
         <li><a href="#">Twitter</a></li>
         <li><a href="#">Instagram</a></li>
       </ul>
-    </div>
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
     </div>
   </main>
 </body>
