@@ -82,7 +82,7 @@
       font-family: 'Outfit';
       font-style: normal;
       font-weight: 600;
-      font-size: 20px;
+      font-size: 1.25rem;
       line-height: 100%;
       color: #7A284E;
       margin: 0;
@@ -185,6 +185,19 @@
       line-height: 150%;
       display: flex;
       gap: 24px;
+      padding: 4px 0;
+    }
+
+    .list-instructions li:first-child {
+      padding-top: 0;
+    }
+
+    .list-instructions li:last-child {
+      padding-bottom: 0;
+    }
+
+    .list-instructions li p {
+      margin: 0;
     }
 
     .list-instructions li::before {
@@ -195,6 +208,83 @@
       font-size: 1rem;
       line-height: 150%;
       color: #854632;
+    }
+
+    table {
+      border-collapse: collapse;
+      margin-bottom: 40px;
+    }
+
+    table tr {
+      border-bottom: 1px solid #E3DDD7;
+      text-align: left;
+    }
+
+    table tr:last-child {
+      border-bottom: none;
+    }
+
+    table th,
+    table td {
+      padding: 12px 0;
+    }
+
+    table th {
+      padding-left: 32px;
+      font-family: 'Outfit';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      color: #5F564D;
+    }
+
+    table td {
+      padding-right: 32px;
+      font-family: 'Outfit';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 150%;
+      color: #854632;
+    }
+
+    @media screen and (max-width: 768px) {
+      main {
+        width: 80.21%;
+      }
+    }
+
+    @media screen and (max-width: 375px) {
+      body {
+        margin: 0
+      }
+
+      main {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        border-radius: 0;
+      }
+
+      main img {
+        margin-top: 0;
+        border-radius: 0;
+      }
+
+      main > *:not(:first-child) {
+        margin-left: 32px;
+        margin-right: 32px;
+      }
+
+      main h1 {
+        font-family: 'Young Serif';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2.25rem;
+        line-height: 100%;
+        color: #312E2C;
+      }
     }
   </style>
 </head>
@@ -234,26 +324,35 @@
     </h2>
     <ol class="list-instructions">
       <li>
-        Beat the eggs: In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed.
-        You can add a tablespoon of water or milk for a fluffier texture.
+        <p><strong>Beat the eggs</strong>: In a bowl, beat the eggs with a pinch of salt and pepper until they are well
+          mixed. You can add a tablespoon of water or milk for a fluffier texture.</p>
       </li>
       <li>
-        Heat the pan: Place a non-stick frying pan over medium heat and add butter or oil.
+        <p><strong>Heat the pan</strong>: Place a non-stick frying pan over medium heat and add butter or oil.</p>
       </li>
       <li>
-        Cook the omelette: Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure
-        the eggs evenly coat the surface.
+        <p>
+          <strong>Cook the omelette</strong>: Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to
+          ensure
+          the eggs evenly coat the surface.
+        </p>
       </li>
       <li>
-        Add fillings (optional): When the eggs begin to set at the edges but are still slightly runny in the
-        middle, sprinkle your chosen fillings over one half of the omelette.
+        <p>
+          <strong>Add fillings (optional)</strong>: When the eggs begin to set at the edges but are still slightly runny
+          in the
+          middle, sprinkle your chosen fillings over one half of the omelette.
+        </p>
       </li>
       <li>
-        Fold and serve: As the omelette continues to cook, carefully lift one edge and fold it over the
-        fillings. Let it cook for another minute, then slide it onto a plate.
+        <p>
+          <strong>Fold and serve</strong>: As the omelette continues to cook, carefully lift one edge and fold it over
+          the
+          fillings. Let it cook for another minute, then slide it onto a plate.
+        </p>
       </li>
       <li>
-        Enjoy: Serve hot, with additional salt and pepper if needed.
+        <p><strong>Enjoy</strong>: Serve hot, with additional salt and pepper if needed.</p>
       </li>
     </ol>
     <div class="line"></div>
